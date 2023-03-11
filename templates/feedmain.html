@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
-    <script src="https://cdn.tailwindcss.com"></script>	
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="new1.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {%load static %}
+    <link rel="stylesheet" href="{%static 'new2.css'%}">
 
     <style>
         .rounded{
@@ -58,7 +65,25 @@
                     <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your feedback</label>
                     <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a feedback..."></textarea>
                 </div>
+                <div class="sm:col-span-2">
+                    <label for="rating" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Rate Our Site:</label>
+                    <div class="rate">
+                        <input type="radio" name="rating" id="rating10" value="5" required /><label for="rating10" title="5"></label>
+                        <input type="radio" name="rating" id="rating9" value="4.5" required /><label for="rating9" title="4.5" class="half"></label>
+                        <input type="radio" name="rating" id="rating8" value="4" required /><label for="rating8" title="4"></label>
+                        <input type="radio" name="rating" id="rating7" value="3.5" required /><label for="rating7" title="3.5" class="half"></label>
+                        <input type="radio" name="rating" id="rating6" value="3" required /><label for="rating6" title="3"></label>
+                        <input type="radio" name="rating" id="rating5" value="2.5" required /><label for="rating5" title="2.5" class="half"></label>
+                        <input type="radio" name="rating" id="rating4" value="2" required /><label for="rating4" title="2"></label>
+                        <input type="radio" name="rating" id="rating3" value="1.5" required /><label for="rating3" title="1.5" class="half"></label>
+                        <input type="radio" name="rating" id="rating2" value="1" required /><label for="rating2" title="1"></label>
+                        <input type="radio" name="rating" id="rating1" value="0.5" required /><label for="rating1" title="0.5" class="half"></label>
+                    </div>
+<br>
+                </div>
                 <button type="submit" class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Submit</button>
+                
+
             </form>
         </div>
       </section>
